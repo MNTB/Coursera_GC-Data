@@ -56,7 +56,7 @@ output:
 
 20.create a new name vector using colnames function
 
-21.use gsub to rename columns more "descriptively".  This is a stepwise process, where, based on the README from the original date, I am replacing "t" with Timed, "f" with Fourier, "mean" with Averaged, "x, Y, or Z" with X-axis, etc., and "std" with SD.  So wherease the original variable name might be "tGravityAcc-std()-X" the new descriptive title is "Average Timed GravityAcc SD X-axis""
+21.use gsub to rename columns more "descriptively".  This is a stepwise process, where, based on the "features_info.txt" from the original data, "t" was replaced with Average Mean Timed, "f" with Average Mean Fourier, "x, Y, or Z" with X-axis, etc., and "std" with SD.  So wherease the original variable name might be "tGravityAcc-std()-X" the new descriptive title is "Average Mean Timed GravityAcc SD X-axis"
 
   - 21a. first replace X, Y, Z with X-axis, etc.
 
