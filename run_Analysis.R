@@ -116,7 +116,7 @@ for(i in 1:nrow(finalframe)){
                       
 }
 
-head(finalframe,10)
+print(head(finalframe,10))
 
 #19.Aggregating data seems to have added an extra column.  Remove.
 
@@ -145,7 +145,13 @@ Titles6<-gsub("[[:digit:]]", "", Titles5)
 #22. Finally, replace column names with new Titles6 vector.
 colnames(tidydata)<-Titles6
 
+print(head(tidydata))
+
 #23.Write data to text file with write.table
 write.table(tidydata, file = "tidydata.txt", row.name = FALSE)
 
+#24. to view data, read back in with read.table
 
+Readtidy<-read.table("./tidydata.txt", header = TRUE, check.names = FALSE)
+
+print(head(Readtidy))
