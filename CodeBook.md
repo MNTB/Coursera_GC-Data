@@ -18,5 +18,5 @@ And finally, the variable names were made more descriptive:
 
 This is a stepwise process, where, based on the "features_info.txt" from the original data, "t" was replaced with Average Mean Timed, "f" with Average Mean Fourier, "x, Y, or Z" with X-axis, etc., and "std" with SD.  So wherease the original variable name might be "tGravityAcc-std()-X" the new descriptive title is "Average Mean Timed GravityAcc SD X-axis"
 
-The final dataset is by definition tidy, with one variable per column.
+The final dataset is by definition tidy, with one variable per column. To confirm this, use the read.table instruction in the ReadMe file (#24) to get a better view of the data.
 

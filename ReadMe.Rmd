@@ -8,7 +8,7 @@ output:
 ---
 ###Getting and Cleaning Data: Course Project
 
-####Here are the steps that were taken in the script to analyze the data and create the final data set
+####Here are the steps that were taken in the script to analyze the data and create the final data set.  These steps also appear in the analysis script as comments before each code section.
 
 
 1. Create a folder for raw data
@@ -68,6 +68,10 @@ output:
 
 23. Write data to text file with write.table
 
-24. To view data in R, use: variable.name<-read.table(tidydata, header = TRUE). 
+24. To view data, read back in with read.table and view
+
+Readtidy<-read.table("./tidydata.txt", header = TRUE, check.names = FALSE)
+
+head(Readtidy)
 
 
